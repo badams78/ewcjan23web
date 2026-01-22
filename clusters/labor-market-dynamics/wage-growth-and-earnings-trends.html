@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Growth and Earnings Trends - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P4_S0">
+    <header>
+        <div class="container">
+            <h1>Wage Growth and Earnings Trends</h1>
+            <div class="subtitle">209 articles · Parent: Labor Market Dynamics</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Labor Market Dynamics</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster analyzes wage and earnings patterns across American workers, focusing on real wage growth rates, income distribution trends, and sectoral variations in compensation. Articles frequently cite Federal Reserve data, Bank of America consumer insights, and academic research to examine how different worker segments - particularly bottom quartile earners, high school graduates, and college-educated workers - experience varying wage trajectories. Common themes include inflation's impact on real earnings, minimum wage effects, and the evolving college premium. The subcluster emphasizes quantitative analysis of compensation trends, often incorporating specific percentage changes and demographic breakdowns, while examining policy implications for Federal Reserve decisions and labor market interventions.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Only 20% of US workers have seen real hourly earnings growth over the past year, as inflation outpac</div>
+            <div class="meta">
+                Peterson Institute for International Economics · 2022-12-08
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. 2000-16: US labor share -5.4pts = 75% of post-WWII drop. Drivers: sector cycles 33%, depreciation 26</div>
+            <div class="meta">
+                McKinsey & Company · 2019-05-30
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. @DanielJWilson @FederalReserveBank of San Francisco: Despite low unemployment, evidence suggests wag</div>
+            <div class="meta">
+                Federal Reserve Bank of San Francisco · 2019-01-16
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. The unemployment rate fell significantly from 2014-2018, leading to a tighter labor market & increas</div>
+            <div class="meta">
+                Washington Post · 2019-01-08
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. Nominal wage gains are running ahead of the pre-pandemic period and are now in line with the pre-cri</div>
+            <div class="meta">
+                The Overshoot · 2023-11-07
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. @PaulKrugman expresses disappointment with Thomas Piketty's new book, "Capital and Ideology," noting</div>
+            <div class="meta">
+                New York Times · 2020-03-09
+                <span class="similarity">Similarity: 0.42</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S9</div>
+            <div class="edge-reason">This article is borderline because while it mentions Thomas Piketty's work on inequality (which relates to wage and earnings distribution), it's actually a book review focused on critiquing the author's methodology rather than analyzing specific wage growth data or earnings trends. The content is more about economic theory and ideology critique than the empirical wage analysis that defines this cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Design in nature evolves toward facilitating the movement of whatever flows through it.</div>
+            <div class="meta">
+                Wall Street Journal · 2019-02-02
+                <span class="similarity">Similarity: 0.44</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S3</div>
+            <div class="edge-reason">This article appears to be about natural design principles and flow dynamics rather than wage growth and earnings trends, making it a clear misclassification. The content about natural evolution and movement flows has no apparent connection to labor economics, compensation patterns, or income distribution analysis that defines the assigned cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Since 2019 enrollment growth in vocational-focused community colleges is up 16% compared to under 1%</div>
+            <div class="meta">
+                Wall Street Journal · 2024-04-01
+                <span class="similarity">Similarity: 0.47</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S4</div>
+            <div class="edge-reason">This article is borderline because while it discusses vocational training that can lead to higher wages in skilled trades, it focuses primarily on educational enrollment trends and demographic shifts rather than actual wage growth data or earnings patterns. The content is more about workforce pipeline development than the wage and compensation analysis that defines the cluster's core focus.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P4_S0_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

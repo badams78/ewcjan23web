@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Patterns and Workforce Participation - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P4_S1">
+    <header>
+        <div class="container">
+            <h1>Employment Patterns and Workforce Participation</h1>
+            <div class="subtitle">204 articles · Parent: Labor Market Dynamics</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Labor Market Dynamics</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines workforce participation rates, employment patterns, and labor force composition across different demographics and work arrangements. Articles analyze participation rates by age groups, particularly prime-age workers and older Americans, while tracking the rise of gig economy and flexible work arrangements. Common data sources include Bureau of Labor Statistics employment reports, demographic surveys, and industry-specific workforce studies. The focus spans traditional employment metrics, non-standard work patterns like ride-sharing and contract labor, and structural changes including automation impacts. Unlike its sibling subcluster on wage growth and earnings trends, this cluster emphasizes who participates in the labor market and how work arrangements are evolving, rather than compensation levels.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. The aging US population has resulted in a shortfall of 1.9m workers since 2019, with a decline in LF</div>
+            <div class="meta">
+                The Economist · 2023-01-27
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. The aging of the American population has left the US short 1.9M workers relative to 2019.  A decline</div>
+            <div class="meta">
+                The Economist · 2023-01-25
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. @GoldmanSachs reports a 2.85mm workforce decline: aging accounts for 700,000, early retirements for </div>
+            <div class="meta">
+                Goldman Sachs · 2022-06-27
+                <span class="similarity">Similarity: 0.82</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. The US labor force has expanded at a slower rate over the past two decades, contributing to a slowdo</div>
+            <div class="meta">
+                Wall Street Journal · 2022-07-25
+                <span class="similarity">Similarity: 0.82</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. .@HalScott_HLS argues the Federal Reserve failed to stem the on SVB by not serving as the lender of </div>
+            <div class="meta">
+                Wall Street Journal · 2023-03-17
+                <span class="similarity">Similarity: 0.82</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. NYC ride-share drivers can earn $72,000 annually from rides, with additional income from services li</div>
+            <div class="meta">
+                CNBC · 2019-02-05
+                <span class="similarity">Similarity: 0.27</span>
+            </div>
+            <div class="meta">Almost classified as: P4_S2</div>
+            <div class="edge-reason">This article is borderline because while it mentions ride-share driving as a work arrangement, it focuses primarily on specific income figures ($72,000-$75,000) rather than analyzing workforce participation patterns, employment trends, or labor force composition across demographics. The content is more about earnings potential in the gig economy rather than examining broader employment patterns or participation rates that define this cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Kevin Corinth finds that childless, non-disabled, non-working adult Medicaid recipients aged 19–64 s</div>
+            <div class="meta">
+                American Enterprise Institute · 2025-06-27
+                <span class="similarity">Similarity: 0.40</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S2</div>
+            <div class="edge-reason">This article is borderline because while it touches on workforce participation by examining non-working adults, its primary focus is on Medicaid recipients' time use patterns rather than analyzing employment rates, labor force demographics, or workforce participation trends. The content is more aligned with welfare policy analysis and behavioral studies of benefit recipients than with traditional employment pattern research.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Amazon generated a $301bn consumer surplus in 2020, with only 7% or $21.3bn going to shareholders. E</div>
+            <div class="meta">
+                Amazon · 2021-04-20
+                <span class="similarity">Similarity: 0.41</span>
+            </div>
+            <div class="meta">Almost classified as: P6_S0</div>
+            <div class="edge-reason">This article is borderline because while it mentions employee compensation ($91bn), it primarily focuses on Amazon's financial value distribution and consumer surplus rather than analyzing workforce participation rates, employment patterns, or labor force demographics. The content is more aligned with corporate financial performance and value creation than with the systematic study of employment trends and workforce composition that defines this cluster.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P4_S1_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Trends & Lifetime Earnings Patterns - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P10_S12">
+    <header>
+        <div class="container">
+            <h1>Income Trends & Lifetime Earnings Patterns</h1>
+            <div class="subtitle">30 articles · Parent: Education & Employment Outcomes</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Education & Employment Outcomes</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines long-term earnings trajectories and income distribution patterns across demographic groups and time periods. Articles analyze wage trends spanning decades, focusing on how earnings evolve over workers' careers and lifetimes rather than single-point measurements. Common themes include prime-age earnings patterns, peak earning ages, income quintile mobility, and generational wealth accumulation. Data sources typically draw from longitudinal datasets like Federal Reserve surveys and Bureau of Labor Statistics records. Unlike sibling clusters examining educational attainment gaps or academic performance metrics, this subcluster emphasizes economic outcomes over time, tracking how income patterns shift across age cohorts and socioeconomic strata throughout working careers.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Higher income workers increased hours worked from 1965 to 2005, while lower income workers saw an in</div>
+            <div class="meta">
+                Springer Nature · 2015-01-27
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. @KatherineGuyot ~90% of middle-class income growth btw 1979-2018 driven by higher female wages & hou</div>
+            <div class="meta">
+                Brookings Institution · 2020-08-24
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. Lifetime incomes in the US over six decades show that wider dispersion of 25-year-old incomes is the</div>
+            <div class="meta">
+                National Bureau of Economic Research · 2020-06-05
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. Between 1979 and 2022 prime-age men in the bottom quintile saw their inflation-adjusted market incom</div>
+            <div class="meta">
+                Economic Innovation Group · 2024-10-03
+                <span class="similarity">Similarity: 0.77</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. @ShayleeWheeler The data on household total hours worked by income quintile reveals significant disp</div>
+            <div class="meta">
+                N/A · 2015-07-24
+                <span class="similarity">Similarity: 0.76</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. .@swinshi argues that the changes in family formation have not been driven by changes in men's relat</div>
+            <div class="meta">
+                American Enterprise Institute · 2022-12-16
+                <span class="similarity">Similarity: 0.65</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S9</div>
+            <div class="edge-reason">This article is borderline because while it discusses men's earnings trends over time (1979-2021), which fits the income patterns theme, its primary focus is on how these earnings relate to marriage and family formation rather than analyzing the earnings trajectories themselves. The content is more aligned with examining gender-specific economic factors affecting marriage outcomes, which explains why it shows higher similarity to the "Gender Gaps in Education & Marriage Outcomes" cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Work hours increase with income inequality, with greater inequality predicting longer work hours, ac</div>
+            <div class="meta">
+                The Economic Journal · 2020-05-21
+                <span class="similarity">Similarity: 0.68</span>
+            </div>
+            <div class="meta">Almost classified as: P4_S0</div>
+            <div class="edge-reason">This article is borderline because while it touches on income inequality (relevant to income distribution patterns), its primary focus is on the relationship between inequality and work hours rather than examining actual earnings trajectories or income trends over time. The content is more about behavioral responses to inequality rather than the core income and earnings pattern analysis that defines this cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. .@swinshi @AEIecon finds faults with @oren_cass analysis and argues that it has become easier for a </div>
+            <div class="meta">
+                American Enterprise Institute · 2023-06-21
+                <span class="similarity">Similarity: 0.68</span>
+            </div>
+            <div class="meta">Almost classified as: P4_S2</div>
+            <div class="edge-reason">This article is borderline because while it mentions analysis of male earners' ability to support families compared to 1985 (which relates to income trends over time), it's just a brief social media post referencing a debate rather than substantive analysis of earnings patterns or income distribution data that would be typical for this cluster.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P10_S12_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

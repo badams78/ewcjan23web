@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Demographics & Electoral Shifts - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P7_S0">
+    <header>
+        <div class="container">
+            <h1>Voter Demographics & Electoral Shifts</h1>
+            <div class="subtitle">127 articles · Parent: Political Attitudes & Demographics</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Political Attitudes & Demographics</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster analyzes shifting voter demographics and electoral patterns through quantitative data and polling analysis. Articles examine demographic breakdowns by age, race, geography, and socioeconomic status, tracking how different voter groups' preferences evolve across election cycles. Common sources include voter registration data, exit polls, census information, and electoral analyses from outlets like New York Times and political observers. The focus spans local NYC politics to national presidential trends, documenting phenomena like residential political segregation, new voter registration patterns, and demographic coalition changes. Unlike broader political attitude research, this subcluster specifically emphasizes measurable electoral shifts and demographic voting patterns rather than ideological or policy preference analysis.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Trump's edge in the electoral college is fading as polling shows Trump’s improved margins with non-w</div>
+            <div class="meta">
+                New York Times · 2023-09-12
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. New polling suggests Trump and Biden are tied with 18-29-year-olds and Hispanic voters, relative to </div>
+            <div class="meta">
+                New York Times · 2024-05-13
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. Exit poll analysis by Catalist and Edison Research finds 18-19pp shifts toward Trump vs. 2020 among </div>
+            <div class="meta">
+                Financial Times · 2024-11-06
+                <span class="similarity">Similarity: 0.77</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. A NYT analysis finds that Trump won 2.5mm more votes than in 2020 and Harris won 7mm fewer votes tha</div>
+            <div class="meta">
+                New York Times · 2024-11-21
+                <span class="similarity">Similarity: 0.77</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. Biden now leads Trump by 10 points among white voters, a 15-point improvement from 2016.</div>
+            <div class="meta">
+                The Economist · 2020-05-18
+                <span class="similarity">Similarity: 0.77</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. 33 of 37 OECD countries require photo IDs to vote, contrasting with U.S. debates on voter ID laws. E</div>
+            <div class="meta">
+                Real Clear Investigations · 2021-08-16
+                <span class="similarity">Similarity: 0.44</span>
+            </div>
+            <div class="meta">Almost classified as: P7_S1</div>
+            <div class="edge-reason">This article is borderline because it focuses on international voting policy comparisons (voter ID requirements across OECD countries) rather than analyzing demographic voting patterns or electoral shifts within any specific electorate. While voter ID laws can affect different demographic groups differently, the article's emphasis is on cross-national policy differences rather than the demographic and electoral trend analysis that defines the cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Since President Trump's inauguration, job growth in industrial America has been influenced by severa</div>
+            <div class="meta">
+                New York Times · 2017-09-03
+                <span class="similarity">Similarity: 0.47</span>
+            </div>
+            <div class="meta">Almost classified as: P14_S0</div>
+            <div class="edge-reason">This article is borderline because while it mentions economic factors affecting industrial America (a key voter demographic), it focuses primarily on trade and manufacturing economics rather than analyzing actual voter behavior, electoral patterns, or demographic shifts. The content aligns much better with trade and economic policy discussions than with voter demographics and polling analysis.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Democrats lie about Trump’s attacks on USPS.</div>
+            <div class="meta">
+                Wall Street Journal · 2020-08-20
+                <span class="similarity">Similarity: 0.50</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S3</div>
+            <div class="edge-reason">This article is borderline because while it mentions Democrats and Trump (political actors relevant to electoral dynamics), it focuses on accusations about postal service attacks rather than analyzing actual voter demographic data, polling trends, or electoral pattern shifts that define this cluster. The content appears more aligned with political messaging and postal service policy debates than the quantitative demographic analysis that characterizes this subcluster.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P7_S0_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

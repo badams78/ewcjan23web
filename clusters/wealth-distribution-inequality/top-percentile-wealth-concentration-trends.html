@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Percentile Wealth Concentration Trends - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P12_S0">
+    <header>
+        <div class="container">
+            <h1>Top Percentile Wealth Concentration Trends</h1>
+            <div class="subtitle">146 articles · Parent: Wealth Distribution & Inequality</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Wealth Distribution & Inequality</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines empirical data and trends regarding wealth concentration among the highest-earning households, particularly the top 1% and 0.1% of income and wealth distributions. Articles primarily analyze quantitative datasets from sources like the Federal Reserve's Survey of Consumer Finances, Congressional Budget Office reports, and academic research papers tracking long-term distributional changes. The content focuses on specific metrics such as wealth shares, income percentiles, asset composition differences, and methodological debates over measurement approaches. Coverage includes stock market exposure disparities, business ownership as primary income sources for top earners, inheritance patterns, and cross-national comparisons of household savings behaviors, providing detailed statistical portraits of how wealth accumulates and concentrates at the distribution's apex.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. The share of pretax income for households in the 80th to 99th % increased modestly from 29% to 31% b</div>
+            <div class="meta">
+                Congressional Budget Office · 2020-06-12
+                <span class="similarity">Similarity: 0.84</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. The 0.01% of earners now hold 11% of US wealth & 5% of total income, outpacing the rest of the 1%. T</div>
+            <div class="meta">
+                Chicago Booth Review · 2019-05-17
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. The top 0.1% share of wealth in the U.S. doubled from 7% to 14% btw 1978 and 2016, highlighting a si</div>
+            <div class="meta">
+                National Bureau of Economic Research · 2020-04-29
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. Income concentration in the U.S. has shown significant fluctuations over the decades, with the top 1</div>
+            <div class="meta">
+                Forbes · 2014-04-24
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. Wage dispersion btw 1980-2010 contributed 62.1% to the change in top 1% wealth share. @BarisKaymak</div>
+            <div class="meta">
+                MIT · 2020-08-18
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. @DavidSplinter Working Paper: Auten and Splinter argue that Zucman's methodology overestimates tax e</div>
+            <div class="meta">
+                Working Paper · 2021-05-14
+                <span class="similarity">Similarity: 0.51</span>
+            </div>
+            <div class="meta">Almost classified as: P12_S1</div>
+            <div class="edge-reason">This article is borderline because while it mentions a working paper by researchers who study wealth concentration, the content specifically focuses on a methodological dispute about tax evasion estimation rather than presenting actual data or trends about top percentile wealth concentration. The article would fit better in the "Tax Policy and High Earner Contributions" cluster since it directly addresses tax evasion methodology, which is more central to tax policy discussions than wealth concentration analysis.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. The median wealth of unmarried women without children is $87,200, on par with the wealth of unmarrie</div>
+            <div class="meta">
+                Pew Research Center · 2024-11-05
+                <span class="similarity">Similarity: 0.52</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S9</div>
+            <div class="edge-reason">This article focuses on median wealth comparisons between unmarried men and women, which is about middle-class wealth patterns rather than the extreme wealth concentration among top percentile earners that defines the assigned cluster. The content would be better suited for the "Gender Gaps in Education & Marriage Outcomes" cluster since it examines gender-based differences in financial outcomes across different demographic groups.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Over the next 20 years, $90T in wealth will be transferred from Americans born before 1964 to their </div>
+            <div class="meta">
+                Financial Times · 2024-04-15
+                <span class="similarity">Similarity: 0.53</span>
+            </div>
+            <div class="meta">Almost classified as: P12_S1</div>
+            <div class="edge-reason">This article is borderline because while it involves substantial wealth amounts, it focuses on intergenerational wealth transfer rather than examining current wealth concentration patterns or distribution trends among top percentile households. The content is more about demographic-driven wealth transitions than empirical analysis of how wealth is concentrated within the highest-earning segments of the population.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P12_S0_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

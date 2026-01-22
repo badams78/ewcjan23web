@@ -1,0 +1,126 @@
+{
+  "primaries": [
+    {
+      "id": "P0",
+      "name": "US-China Trade War",
+      "color": "#E63946"
+    },
+    {
+      "id": "P1",
+      "name": "Long-Term Bond Yields",
+      "color": "#457B9D"
+    },
+    {
+      "id": "P2",
+      "name": "Demographics & Immigration Policy",
+      "color": "#2A9D8F"
+    },
+    {
+      "id": "P3",
+      "name": "Power Generation & Infrastructure",
+      "color": "#E9C46A"
+    },
+    {
+      "id": "P4",
+      "name": "Labor Market Dynamics",
+      "color": "#F4A261"
+    },
+    {
+      "id": "P5",
+      "name": "Defense Technology Competition",
+      "color": "#264653"
+    },
+    {
+      "id": "P6",
+      "name": "Productivity & Market Performance",
+      "color": "#8338EC"
+    },
+    {
+      "id": "P7",
+      "name": "Political Attitudes & Demographics",
+      "color": "#FF006E"
+    },
+    {
+      "id": "P8",
+      "name": "Economic Policy & Trade",
+      "color": "#3A86FF"
+    },
+    {
+      "id": "P9",
+      "name": "Fed Policy & Economic Sentiment",
+      "color": "#06D6A0"
+    },
+    {
+      "id": "P10",
+      "name": "Education & Employment Outcomes",
+      "color": "#118AB2"
+    },
+    {
+      "id": "P11",
+      "name": "AI Investment & Market Risks",
+      "color": "#EF476F"
+    },
+    {
+      "id": "P12",
+      "name": "Wealth Distribution & Inequality",
+      "color": "#FFD166"
+    },
+    {
+      "id": "P13",
+      "name": "Urban Migration & Housing",
+      "color": "#073B4C"
+    },
+    {
+      "id": "P14",
+      "name": "China Trade & Economic Impact",
+      "color": "#9B5DE5"
+    }
+  ],
+  "by_name": {
+    "us-china-trade-war": "#E63946",
+    "P0": "#E63946",
+    "US-China Trade War": "#E63946",
+    "long-term-bond-yields": "#457B9D",
+    "P1": "#457B9D",
+    "Long-Term Bond Yields": "#457B9D",
+    "demographics--immigration-poli": "#2A9D8F",
+    "P2": "#2A9D8F",
+    "Demographics & Immigration Policy": "#2A9D8F",
+    "power-generation--infrastructu": "#E9C46A",
+    "P3": "#E9C46A",
+    "Power Generation & Infrastructure": "#E9C46A",
+    "labor-market-dynamics": "#F4A261",
+    "P4": "#F4A261",
+    "Labor Market Dynamics": "#F4A261",
+    "defense-technology-competition": "#264653",
+    "P5": "#264653",
+    "Defense Technology Competition": "#264653",
+    "productivity--market-performan": "#8338EC",
+    "P6": "#8338EC",
+    "Productivity & Market Performance": "#8338EC",
+    "political-attitudes--demograph": "#FF006E",
+    "P7": "#FF006E",
+    "Political Attitudes & Demographics": "#FF006E",
+    "economic-policy--trade": "#3A86FF",
+    "P8": "#3A86FF",
+    "Economic Policy & Trade": "#3A86FF",
+    "fed-policy--economic-sentiment": "#06D6A0",
+    "P9": "#06D6A0",
+    "Fed Policy & Economic Sentiment": "#06D6A0",
+    "education--employment-outcomes": "#118AB2",
+    "P10": "#118AB2",
+    "Education & Employment Outcomes": "#118AB2",
+    "ai-investment--market-risks": "#EF476F",
+    "P11": "#EF476F",
+    "AI Investment & Market Risks": "#EF476F",
+    "wealth-distribution--inequalit": "#FFD166",
+    "P12": "#FFD166",
+    "Wealth Distribution & Inequality": "#FFD166",
+    "urban-migration--housing": "#073B4C",
+    "P13": "#073B4C",
+    "Urban Migration & Housing": "#073B4C",
+    "china-trade--economic-impact": "#9B5DE5",
+    "P14": "#9B5DE5",
+    "China Trade & Economic Impact": "#9B5DE5"
+  }
+}

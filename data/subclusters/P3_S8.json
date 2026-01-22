@@ -1,0 +1,516 @@
+{
+  "id": "P3_S8",
+  "name": "Quantum Computing Breakthroughs & Commercial Development",
+  "primary_id": 3,
+  "primary_name": "Power Generation & Infrastructure",
+  "article_count": 15,
+  "coords": {
+    "x": 21.417327880859375,
+    "y": 22.478809356689453
+  },
+  "similarity_row": [
+    0.2944693526325103,
+    0.26622729492387975,
+    0.28132199311089434,
+    0.21735512543458843,
+    0.2644599187755132,
+    0.2613713072835968,
+    0.23371513143784922,
+    0.2663700374941244,
+    0.40769045852652064,
+    0.6383029044955659,
+    0.22435452169483694,
+    0.2642572576426219,
+    0.39769847780229767,
+    0.5378043992306382,
+    0.2412330228871553,
+    1.0000000000000002,
+    0.22296832778768813,
+    0.2376301642881453,
+    0.17353772113840524,
+    0.5394800036179178,
+    0.32689185044092806,
+    0.33077315775279686,
+    0.417045882614312,
+    0.3560727539275048,
+    0.33099322294253,
+    0.46729670841659204,
+    0.46449797196965154,
+    0.3257220630391201,
+    0.35923659929333857,
+    0.1866245226091305,
+    0.2200674607990598,
+    0.30993852343092265,
+    0.33583177351835514,
+    0.21903453124202613,
+    0.2867242605649468,
+    0.21088983582000762,
+    0.21374345409736564,
+    0.2021677638725731,
+    0.2731717278703877,
+    0.23663457660266493,
+    0.14957738794498776,
+    0.24168476138399422,
+    0.275071788225105,
+    0.31406784426852086,
+    0.34565958444989625,
+    0.200178124758727,
+    0.32132415875100073,
+    0.24251347398125161,
+    0.24677930754840138,
+    0.1898388418905787,
+    0.2877414495701572,
+    0.36759858924029093,
+    0.24203389098344663,
+    0.25861200820317826,
+    0.3126333874676708,
+    0.15917282348189293,
+    0.22643319151658026,
+    0.5266133096669432,
+    0.574324333835644,
+    0.36557699433231455,
+    0.19788030331230888,
+    0.17929243519302032,
+    0.25813778097718065,
+    0.24430589138137856,
+    0.16801964419224477,
+    0.28093020385551337,
+    0.1820897699043902,
+    0.18074810198466595,
+    0.35838372444139455,
+    0.37157059924742863
+  ],
+  "related": [
+    {
+      "id": "P3_S2",
+      "name": "Scientific Research & Discovery Breakthroughs",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.6383029044955659
+    },
+    {
+      "id": "P11_S1",
+      "name": "AI Performance Plateaus and Diminishing Returns",
+      "primary_name": "AI Investment & Market Risks",
+      "similarity": 0.574324333835644
+    },
+    {
+      "id": "P5_S0",
+      "name": "Semiconductor Supply Chain and Trade Policy",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.5394800036179178
+    },
+    {
+      "id": "P3_S6",
+      "name": "Nuclear & Fusion Technology Investment Surge",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.5378043992306382
+    },
+    {
+      "id": "P11_S0",
+      "name": "AI Capital Expenditure and Investment Surge",
+      "primary_name": "AI Investment & Market Risks",
+      "similarity": 0.5266133096669432
+    },
+    {
+      "id": "P5_S6",
+      "name": "Drone Technology and Aerospace Competition",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.46729670841659204
+    },
+    {
+      "id": "P5_S7",
+      "name": "Naval Shipbuilding Competition and Maritime Power",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.46449797196965154
+    },
+    {
+      "id": "P5_S3",
+      "name": "Critical Minerals and Rare Earth Controls",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.417045882614312
+    },
+    {
+      "id": "P3_S1",
+      "name": "Global Power Demand Growth & Investment Trends",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.40769045852652064
+    },
+    {
+      "id": "P3_S5",
+      "name": "SpaceX Starship Development & Commercial Space",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.39769847780229767
+    },
+    {
+      "id": "P14_S1",
+      "name": "China Domestic Politics & Social Issues",
+      "primary_name": "China Trade & Economic Impact",
+      "similarity": 0.37157059924742863
+    },
+    {
+      "id": "P10_S8",
+      "name": "Cognitive Skills & Intelligence in Economic Returns",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.36759858924029093
+    },
+    {
+      "id": "P11_S2",
+      "name": "AI-Driven Labor Market Displacement Effects",
+      "primary_name": "AI Investment & Market Risks",
+      "similarity": 0.36557699433231455
+    },
+    {
+      "id": "P6_S1",
+      "name": "Productivity Growth & Innovation Dynamics",
+      "primary_name": "Productivity & Market Performance",
+      "similarity": 0.35923659929333857
+    },
+    {
+      "id": "P14_S0",
+      "name": "China Trade Surplus & Export Growth",
+      "primary_name": "China Trade & Economic Impact",
+      "similarity": 0.35838372444139455
+    },
+    {
+      "id": "P5_S4",
+      "name": "Apple Production Shift and Supply Diversification",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.3560727539275048
+    },
+    {
+      "id": "P10_S1",
+      "name": "Management & Performance Analysis",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.34565958444989625
+    },
+    {
+      "id": "P8_S1",
+      "name": "Global Economic Strategy & Climate Policy",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.33583177351835514
+    },
+    {
+      "id": "P5_S5",
+      "name": "EV Trade Wars and Auto Industry Competition",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.33099322294253
+    },
+    {
+      "id": "P5_S2",
+      "name": "Military Alliance and Regional Defense Strategy",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.33077315775279686
+    },
+    {
+      "id": "P5_S1",
+      "name": "Defense Spending and Military Mobilization",
+      "primary_name": "Defense Technology Competition",
+      "similarity": 0.32689185044092806
+    },
+    {
+      "id": "P6_S0",
+      "name": "Corporate Valuations & Market Concentration",
+      "primary_name": "Productivity & Market Performance",
+      "similarity": 0.3257220630391201
+    },
+    {
+      "id": "P10_S3",
+      "name": "Labor Market Outcomes by Education Level",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.32132415875100073
+    },
+    {
+      "id": "P10_S0",
+      "name": "Academic Performance & Learning Assessments",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.31406784426852086
+    },
+    {
+      "id": "P10_S11",
+      "name": "Research Quality & Scientific Reproducibility Crisis",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.3126333874676708
+    },
+    {
+      "id": "P8_S0",
+      "name": "Economic Performance & Productivity Comparisons",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.30993852343092265
+    },
+    {
+      "id": "P0_S0",
+      "name": "Currency and Trade Balance Dynamics",
+      "primary_name": "US-China Trade War",
+      "similarity": 0.2944693526325103
+    },
+    {
+      "id": "P10_S7",
+      "name": "Race-Based College Admissions & Policy Debates",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.2877414495701572
+    },
+    {
+      "id": "P8_S3",
+      "name": "Industrial Policy & Market Efficiency Debates",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.2867242605649468
+    },
+    {
+      "id": "P1_S0",
+      "name": "Treasury Market Dynamics and Foreign Demand",
+      "primary_name": "Long-Term Bond Yields",
+      "similarity": 0.28132199311089434
+    },
+    {
+      "id": "P13_S3",
+      "name": "Youth Health & Social Behavior Decline",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.28093020385551337
+    },
+    {
+      "id": "P9_S1",
+      "name": "Fed Rate Cuts & Inflation Risk Concerns",
+      "primary_name": "Fed Policy & Economic Sentiment",
+      "similarity": 0.275071788225105
+    },
+    {
+      "id": "P8_S7",
+      "name": "German Economic Decline & Industrial Stagnation",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.2731717278703877
+    },
+    {
+      "id": "P3_S0",
+      "name": "US Energy Production & Export Dominance",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.2663700374941244
+    },
+    {
+      "id": "P0_S1",
+      "name": "Tariff Implementation and Economic Impact",
+      "primary_name": "US-China Trade War",
+      "similarity": 0.26622729492387975
+    },
+    {
+      "id": "P1_S2",
+      "name": "Corporate Credit and Banking Sector Lending",
+      "primary_name": "Long-Term Bond Yields",
+      "similarity": 0.2644599187755132
+    },
+    {
+      "id": "P3_S4",
+      "name": "Ocean Temperature Records & Climate Impact",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.2642572576426219
+    },
+    {
+      "id": "P2_S0",
+      "name": "Global Fertility Decline & Family Structure Changes",
+      "primary_name": "Demographics & Immigration Policy",
+      "similarity": 0.2613713072835968
+    },
+    {
+      "id": "P10_S10",
+      "name": "Early Childhood & K-12 Educational Interventions",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.25861200820317826
+    },
+    {
+      "id": "P13_S0",
+      "name": "Housing Affordability & Market Pricing Trends",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.25813778097718065
+    },
+    {
+      "id": "P10_S5",
+      "name": "Intergenerational Income Mobility & Economic Prospects",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.24677930754840138
+    },
+    {
+      "id": "P13_S1",
+      "name": "Metropolitan Population Shifts & Economic Dynamics",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.24430589138137856
+    },
+    {
+      "id": "P10_S4",
+      "name": "College Graduate Employment & Wage Premiums",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.24251347398125161
+    },
+    {
+      "id": "P10_S9",
+      "name": "Gender Gaps in Education & Marriage Outcomes",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.24203389098344663
+    },
+    {
+      "id": "P9_S0",
+      "name": "Income Growth vs. Inflation Reality",
+      "primary_name": "Fed Policy & Economic Sentiment",
+      "similarity": 0.24168476138399422
+    },
+    {
+      "id": "P3_S7",
+      "name": "Water Resource Management & Supply Challenges",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.2412330228871553
+    },
+    {
+      "id": "P4_S1",
+      "name": "Employment Patterns and Workforce Participation",
+      "primary_name": "Labor Market Dynamics",
+      "similarity": 0.2376301642881453
+    },
+    {
+      "id": "P8_S8",
+      "name": "Infrastructure Costs & Construction Efficiency Analysis",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.23663457660266493
+    },
+    {
+      "id": "P2_S1",
+      "name": "Immigration Flows & Labor Market Impact",
+      "primary_name": "Demographics & Immigration Policy",
+      "similarity": 0.23371513143784922
+    },
+    {
+      "id": "P10_S13",
+      "name": "Elite College Admissions & Standardized Testing",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.22643319151658026
+    },
+    {
+      "id": "P3_S3",
+      "name": "H5N1 Bird Flu Outbreak & Public Health Impact",
+      "primary_name": "Power Generation & Infrastructure",
+      "similarity": 0.22435452169483694
+    },
+    {
+      "id": "P4_S0",
+      "name": "Wage Growth and Earnings Trends",
+      "primary_name": "Labor Market Dynamics",
+      "similarity": 0.22296832778768813
+    },
+    {
+      "id": "P7_S1",
+      "name": "Gender & Age Political Preference Gaps",
+      "primary_name": "Political Attitudes & Demographics",
+      "similarity": 0.2200674607990598
+    },
+    {
+      "id": "P8_S2",
+      "name": "Fiscal Policy & Government Spending Analysis",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.21903453124202613
+    },
+    {
+      "id": "P1_S1",
+      "name": "Government Debt Sustainability and Fiscal Deficits",
+      "primary_name": "Long-Term Bond Yields",
+      "similarity": 0.21735512543458843
+    },
+    {
+      "id": "P8_S5",
+      "name": "Healthcare Economics & Income Distribution Analysis",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.21374345409736564
+    },
+    {
+      "id": "P8_S4",
+      "name": "French Government Crisis & Fiscal Instability",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.21088983582000762
+    },
+    {
+      "id": "P8_S6",
+      "name": "Budget Reconciliation & Legislative Scoring Analysis",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.2021677638725731
+    },
+    {
+      "id": "P10_S2",
+      "name": "Generational Wealth & Income Disparities",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.200178124758727
+    },
+    {
+      "id": "P12_S0",
+      "name": "Top Percentile Wealth Concentration Trends",
+      "primary_name": "Wealth Distribution & Inequality",
+      "similarity": 0.19788030331230888
+    },
+    {
+      "id": "P10_S6",
+      "name": "Racial & Ethnic Educational Attainment Gaps",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.1898388418905787
+    },
+    {
+      "id": "P7_S0",
+      "name": "Voter Demographics & Electoral Shifts",
+      "primary_name": "Political Attitudes & Demographics",
+      "similarity": 0.1866245226091305
+    },
+    {
+      "id": "P13_S4",
+      "name": "Urban Crime Rates & Public Safety Trends",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.1820897699043902
+    },
+    {
+      "id": "P13_S5",
+      "name": "Drug Overdose Epidemic & Mortality Trends",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.18074810198466595
+    },
+    {
+      "id": "P12_S1",
+      "name": "Tax Policy and High Earner Contributions",
+      "primary_name": "Wealth Distribution & Inequality",
+      "similarity": 0.17929243519302032
+    },
+    {
+      "id": "P4_S2",
+      "name": "Minimum Wage and Income Support Policies",
+      "primary_name": "Labor Market Dynamics",
+      "similarity": 0.17353772113840524
+    },
+    {
+      "id": "P13_S2",
+      "name": "Property Insurance Crisis & Climate Risk",
+      "primary_name": "Urban Migration & Housing",
+      "similarity": 0.16801964419224477
+    },
+    {
+      "id": "P10_S12",
+      "name": "Income Trends & Lifetime Earnings Patterns",
+      "primary_name": "Education & Employment Outcomes",
+      "similarity": 0.15917282348189293
+    },
+    {
+      "id": "P8_S9",
+      "name": "Nordic Economic Models & Socialist Analysis",
+      "primary_name": "Economic Policy & Trade",
+      "similarity": 0.14957738794498776
+    }
+  ],
+  "spider": {
+    "US-China Trade War": 0.280348323778195,
+    "Long-Term Bond Yields": 0.254379012440332,
+    "Demographics & Immigration Policy": 0.24754321936072302,
+    "Power Generation & Infrastructure": 0.37221388497172014,
+    "Labor Market Dynamics": 0.21137873773807955,
+    "Defense Technology Competition": 0.40413144396027917,
+    "Productivity & Market Performance": 0.3424793311662293,
+    "Political Attitudes & Demographics": 0.20334599170409517,
+    "Economic Policy & Trade": 0.24377138349642377,
+    "Fed Policy & Economic Sentiment": 0.2583782748045496,
+    "Education & Employment Outcomes": 0.2653276197222567,
+    "AI Investment & Market Risks": 0.48883821261163396,
+    "Wealth Distribution & Inequality": 0.1885863692526646,
+    "Urban Migration & Housing": 0.21903856538256225,
+    "China Trade & Economic Impact": 0.3649771618444116
+  }
+}

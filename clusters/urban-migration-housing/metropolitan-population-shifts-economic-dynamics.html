@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolitan Population Shifts & Economic Dynamics - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P13_S1">
+    <header>
+        <div class="container">
+            <h1>Metropolitan Population Shifts & Economic Dynamics</h1>
+            <div class="subtitle">135 articles · Parent: Urban Migration & Housing</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Urban Migration & Housing</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines the economic forces driving population movements within and between major US metropolitan areas. Articles analyze domestic migration patterns, particularly outflows from high-cost cities like NYC and California, using census data and employment statistics to understand workforce mobility trends. Content focuses on job growth patterns, wage dynamics, and how economic opportunities shape residential choices across different metropolitan regions. Unlike its sibling subcluster on Housing Affordability & Market Pricing Trends, which emphasizes real estate costs and market mechanisms, this collection prioritizes labor market conditions, demographic shifts, and broader economic indicators as primary drivers of urban population changes and regional competitiveness.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. 25 US cities have generated most job growth since the Great Recession, driven by high-growth industr</div>
+            <div class="meta">
+                McKinsey Global Institute · 2019-07-15
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. The 53 largest US metro areas have driven 93.3% of US population growth since the financial crisis a</div>
+            <div class="meta">
+                Brookings Institution · 2020-05-26
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. US cities grow past 1 million mark, but population share declines: From 2010-2020, the 10 largest ci</div>
+            <div class="meta">
+                Bloomberg · 2021-10-04
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. The 10 fastest-growing US counties accounted for nearly 80% of the country's population growth in 20</div>
+            <div class="meta">
+                New York Times · 2022-03-29
+                <span class="similarity">Similarity: 0.78</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. Expensive urban counties continued to lose population in 2023 despite the uptick in immigration. The</div>
+            <div class="meta">
+                JedKolko.com · 2024-03-14
+                <span class="similarity">Similarity: 0.77</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. NYC's $773m Renewal program, aimed at revitalizing failing schools, was terminated by Mayor de Blasi</div>
+            <div class="meta">
+                New York Times · 2019-02-26
+                <span class="similarity">Similarity: 0.40</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S10</div>
+            <div class="edge-reason">This article is borderline because while it mentions NYC (a major metropolitan area) and involves significant public spending ($773m), the core focus is on educational policy and school intervention programs rather than population movements or economic forces driving migration patterns within metropolitan areas. The content aligns much better with educational interventions, as evidenced by the higher similarity score (0.57) to the K-12 education cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Home prices in Palm Beach have doubled since 2020 reaching a total market value of ~ $40B, according</div>
+            <div class="meta">
+                Bloomberg · 2025-06-20
+                <span class="similarity">Similarity: 0.40</span>
+            </div>
+            <div class="meta">Almost classified as: P12_S1</div>
+            <div class="edge-reason">This article is borderline because while it mentions Palm Beach real estate values, it lacks the core elements of metropolitan population analysis - there's no discussion of migration patterns, population movements, or the economic dynamics driving people to move between metro areas. The article reads more like a straightforward real estate market report than an analysis of demographic shifts and their underlying economic causes.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Federal cuts in health care spending and food stamps mean New York State is facing a $4.2B deficit a</div>
+            <div class="meta">
+                Bloomberg · 2025-11-05
+                <span class="similarity">Similarity: 0.44</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S6</div>
+            <div class="edge-reason">This article is borderline because while it discusses New York's budget deficits caused by federal spending cuts, it focuses on immediate fiscal policy impacts rather than analyzing how these economic pressures might drive population movements or metropolitan migration patterns. The content is more aligned with budget policy analysis than examining the demographic and economic dynamics that cause people to move between metropolitan areas.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P13_S1_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

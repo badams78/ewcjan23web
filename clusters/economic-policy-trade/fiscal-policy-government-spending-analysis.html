@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscal Policy & Government Spending Analysis - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P8_S2">
+    <header>
+        <div class="container">
+            <h1>Fiscal Policy & Government Spending Analysis</h1>
+            <div class="subtitle">52 articles · Parent: Economic Policy & Trade</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Economic Policy & Trade</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines government fiscal operations, spending patterns, and budgetary policy impacts across healthcare, social security, and welfare programs. Articles predominantly feature quantitative analysis from sources like CBO, KFF, and academic research, focusing on spending trends, program solvency, and policy reform outcomes. Coverage spans federal expenditure growth, trust fund projections, Medicaid expansion effects, and international pension reforms. Unlike sibling clusters emphasizing broad economic performance metrics or climate-integrated strategy, this subcluster specifically dissects government budget mechanics, entitlement program sustainability, and fiscal policy consequences through detailed spending data and demographic impact assessments.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Since February 2020, real Federal spending has risen 25%. Interest payments account for ⅓ of the inc</div>
+            <div class="meta">
+                Bloomberg · 2025-06-20
+                <span class="similarity">Similarity: 0.75</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. Washington should rely on state block grants and impose ‘per-capita caps’ on Medicaid spending, argu</div>
+            <div class="meta">
+                Wall Street Journal · 2025-02-28
+                <span class="similarity">Similarity: 0.74</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. Adjusting for inflation and population growth, a WSJ analysis finds “Other health” including Medicai</div>
+            <div class="meta">
+                Wall Street Journal · 2025-03-03
+                <span class="similarity">Similarity: 0.74</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. James Capretta @AEIecon notes while the increase in per-capita Medicare spending has slowed, there a</div>
+            <div class="meta">
+                American Enterprise Institute · 2023-10-05
+                <span class="similarity">Similarity: 0.73</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. The Social Security and Medicare Board of Trustees estimate that the trust fund for Medicare will be</div>
+            <div class="meta">
+                The Economist · 2023-04-10
+                <span class="similarity">Similarity: 0.73</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Denmark is raising its retirement age to 70, the highest in Europe. The change will impact all perso</div>
+            <div class="meta">
+                BBC · 2025-05-29
+                <span class="similarity">Similarity: 0.41</span>
+            </div>
+            <div class="meta">Almost classified as: P2_S0</div>
+            <div class="edge-reason">This article is borderline because while it mentions a government policy change (raising retirement age), it focuses more on demographic and social impacts affecting family planning and life structure rather than detailed fiscal operations, spending patterns, or budgetary analysis. The content aligns better with demographic trends and societal changes, which explains its higher similarity to the fertility/family structure cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. The key drivers of elevated European long yields are higher inflation and chronic fiscal deficits, b</div>
+            <div class="meta">
+                Fed Guy Blog · 2025-09-08
+                <span class="similarity">Similarity: 0.43</span>
+            </div>
+            <div class="meta">Almost classified as: P1_S0</div>
+            <div class="edge-reason">This article is borderline because while it mentions fiscal deficits as a driver of bond yields, its primary focus is on Treasury market dynamics and institutional demand shifts (specifically the Dutch pension system transition) rather than analyzing government spending patterns or budgetary policy impacts on programs like healthcare and social security that define the assigned cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. The Danish Welfare Reform of 2006 linked the eligibility age for the state pension to life expectanc</div>
+            <div class="meta">
+                Rangvid’s Blog · 2025-06-02
+                <span class="similarity">Similarity: 0.51</span>
+            </div>
+            <div class="meta">Almost classified as: P2_S0</div>
+            <div class="edge-reason">This article is borderline because while it mentions fiscal sustainability of the pension system, it focuses primarily on demographic policy (linking retirement age to life expectancy) rather than detailed fiscal operations, spending patterns, or quantitative budgetary analysis that characterizes the cluster. The content is more about demographic-driven policy reform than the government spending analysis that defines this cluster, which explains why it has higher similarity to the fertility/demographic changes cluster.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P8_S2_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

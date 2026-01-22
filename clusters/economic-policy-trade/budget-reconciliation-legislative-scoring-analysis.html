@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Reconciliation & Legislative Scoring Analysis - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P8_S6">
+    <header>
+        <div class="container">
+            <h1>Budget Reconciliation & Legislative Scoring Analysis</h1>
+            <div class="subtitle">43 articles · Parent: Economic Policy & Trade</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Economic Policy & Trade</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster focuses on quantitative analysis of legislative proposals, particularly budget reconciliation bills, through various economic modeling approaches. Articles predominantly feature estimates from authoritative sources like the Congressional Budget Office (CBO), Committee for a Responsible Federal Budget (CRFB), Penn-Wharton Budget Model, and Joint Committee on Taxation regarding fiscal impacts, deficit projections, and dynamic scoring methodologies. The content emphasizes technical legislative scoring processes, tax cut analyses, and debt implications of specific bills. Unlike sibling subclusters examining broader economic performance or sectoral policies, this collection centers on granular fiscal modeling and legislative cost estimation techniques used to evaluate pending congressional legislation.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. The CRFB team estimates that the Senate's reconciliation bill will result in a deficit of 7% of GDP </div>
+            <div class="meta">
+                Committee for a Responsible Federal Budget · 2025-07-02
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. Matt Klein notes that the House Bill contains unexpectedly large spending cuts. Adding tariff revenu</div>
+            <div class="meta">
+                The Overshoot · 2025-05-27
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. .@MarcGoldwein argues the economic assumptions of the House’s reconciliation plan are “unrealistic” </div>
+            <div class="meta">
+                Committee for a Responsible Federal Budget · 2025-02-13
+                <span class="similarity">Similarity: 0.83</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. The Penn-Wharton model finds that, dynamically scored, the Senate-passed reconciliation bill would i</div>
+            <div class="meta">
+                University of Pennsylvania · 2025-07-02
+                <span class="similarity">Similarity: 0.82</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. The House preliminary reconciliation bill would double the growth of the US debt-to-GDP ratio, leavi</div>
+            <div class="meta">
+                Committee for a Responsible Federal Budget · 2025-02-05
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. .@crampell argues that under Kamala Harris’s “price-gouging” proposal, “Supply and demand would no l</div>
+            <div class="meta">
+                Washington Post · 2024-08-16
+                <span class="similarity">Similarity: 0.49</span>
+            </div>
+            <div class="meta">Almost classified as: P8_S3</div>
+            <div class="edge-reason">This article is borderline because while it discusses a legislative proposal's economic implications, it focuses on critiquing price control mechanisms and market intervention rather than providing the quantitative budget analysis, economic modeling, or legislative scoring that characterizes the assigned cluster. The content aligns more naturally with debates about market efficiency and government intervention in pricing mechanisms, which explains its higher similarity to the Industrial Policy & Market Efficiency Debates cluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. In response to a question about GOP proposals for higher taxes on the rich, Trump said, "I think it </div>
+            <div class="meta">
+                Bloomberg · 2025-04-24
+                <span class="similarity">Similarity: 0.56</span>
+            </div>
+            <div class="meta">Almost classified as: P12_S1</div>
+            <div class="edge-reason">This article is borderline because while it mentions tax policy on the wealthy (which relates to budget/revenue considerations), it lacks the quantitative analysis, economic modeling, or legislative scoring elements that define the assigned cluster. The article is more about political commentary on tax policy effects rather than the technical budget reconciliation and analytical focus that characterizes the subcluster.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. .@FedGuy12 argues that “Vice President Harris’ proposed economic plan essentially guarantees stagfla</div>
+            <div class="meta">
+                Fed Guy Blog · 2024-08-19
+                <span class="similarity">Similarity: 0.56</span>
+            </div>
+            <div class="meta">Almost classified as: P9_S1</div>
+            <div class="edge-reason">This article is borderline because while it discusses economic policy analysis (Harris' economic plan), it focuses on predicting macroeconomic outcomes like stagflation and market impacts rather than the quantitative legislative scoring and budget reconciliation modeling that defines the assigned cluster. The content is more aligned with monetary policy and inflation concerns, as suggested by the higher similarity to the "Fed Rate Cuts & Inflation Risk Concerns" cluster.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P8_S6_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>

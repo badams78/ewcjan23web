@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Crime Rates & Public Safety Trends - MacroRoundup</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/visualizations.js"></script>
+</head>
+<body data-subcluster-id="P13_S4">
+    <header>
+        <div class="container">
+            <h1>Urban Crime Rates & Public Safety Trends</h1>
+            <div class="subtitle">57 articles · Parent: Urban Migration & Housing</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <nav>
+            <a href="index.html">← Urban Migration & Housing</a>
+            <a href="../../index.html">Home</a>
+            <a href="../../clusters/index.html">All Clusters</a>
+        </nav>
+        
+        <div class="card">
+            <h2>Description</h2>
+            <p>This subcluster examines urban crime patterns, public safety metrics, and law enforcement trends within metropolitan contexts. Articles analyze violent crime statistics, incarceration rates, juvenile offenses, and emerging public disorder phenomena like fare evasion and quality-of-life violations. Common data sources include FBI crime reports, victimization surveys, and municipal police statistics, often presenting conflicting narratives about whether urban safety is improving or deteriorating. Unlike sibling subclusters focused on housing markets or demographic shifts, this collection specifically addresses criminal justice outcomes and their measurement challenges, exploring how traditional crime metrics may inadequately capture evolving urban safety concerns.</p>
+        </div>
+        
+        <!-- SIMILARITY HEATMAP -->
+        <div class="card viz-section">
+            <h2>Similarity to All 70 Subclusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
+                Hover for details, click to navigate.
+            </p>
+            <div id="heatmap-viz" class="heatmap-container"></div>
+        </div>
+        
+        <!-- SPIDER CHART -->
+        <div class="card viz-section">
+            <h2>Relationship to Primary Clusters</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Average similarity to each of the 15 primary clusters. 
+                Larger area = stronger relationship to that cluster.
+            </p>
+            <div id="spider-viz" class="spider-container"></div>
+        </div>
+        
+        <!-- 2D EMBEDDING MAP -->
+        <div class="card viz-section">
+            <h2>Taxonomy Landscape</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
+                Hover for details, click to navigate.
+            </p>
+            <div id="embedding-map" class="map-container"></div>
+        </div>
+        
+        <!-- NETWORK GRAPH -->
+        <div class="card viz-section">
+            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
+                Interactive Network Graph
+            </h3>
+            <div class="collapsible-content">
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                    Current subcluster at center, connected to related subclusters. 
+                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
+                </p>
+                <div id="network-graph" class="network-container"></div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Most Representative Articles</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Murder Rate In 2021, 6.9 per 100,000 Highest Since 1996 7.4 per 100,000.</div>
+            <div class="meta">
+                New York Times · 2022-02-02
+                <span class="similarity">Similarity: 0.82</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">2. The US murder rate remains elevated, with 20,000 murders in 2020, a 25% increase Y/Y, according to p</div>
+            <div class="meta">
+                New York Times · 2021-03-16
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">3. Two percent of US counties account for half of America’s homicides.</div>
+            <div class="meta">
+                New York Post · 2022-08-08
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">4. The uptick in violent crime associated with the pandemic is receding but homicide rates remain above</div>
+            <div class="meta">
+                Bloomberg · 2024-02-14
+                <span class="similarity">Similarity: 0.81</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="title">5. Btw 2019 and 2020, the murder rate surged by 30%, with black Americans experiencing a disproportiona</div>
+            <div class="meta">
+                New York Post · 2022-05-23
+                <span class="similarity">Similarity: 0.80</span>
+            </div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Edge Cases (Boundary Articles)</h2>
+            <ul class="article-list">
+                
+        <li>
+            <div class="title">1. Crime statistics miss the rise in public disorder, which @CharlesFLehman describes as the "dominatio</div>
+            <div class="meta">
+                The Causal Fallacy · 2024-09-27
+                <span class="similarity">Similarity: 0.55</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S1</div>
+            <div class="edge-reason">This article is borderline because while it discusses public safety and policing strategies in urban contexts, it focuses primarily on non-traditional crime metrics (public disorder, homelessness, litter) rather than the conventional crime statistics and law enforcement trends that define the cluster's core content. The article's emphasis on resource allocation and policing strategies also overlaps with management and performance analysis themes, making it conceptually distant from typical urban crime rate discussions.</div>
+        </li>
+        
+        <li>
+            <div class="title">2. Big Data can help identify potential mass killers by detecting patterns of dangerous behavior. Updat</div>
+            <div class="meta">
+                Wall Street Journal · 2019-08-07
+                <span class="similarity">Similarity: 0.56</span>
+            </div>
+            <div class="meta">Almost classified as: P13_S5</div>
+            <div class="edge-reason">This article is borderline for the "Urban Crime Rates & Public Safety Trends" cluster because while it addresses public safety concerns, it focuses on predictive technology and policy solutions for mass violence rather than analyzing urban crime statistics, patterns, or law enforcement trends within metropolitan areas. The content is more about preventive intervention systems and legal frameworks than the empirical crime data and urban-specific safety metrics that define the cluster's core focus.</div>
+        </li>
+        
+        <li>
+            <div class="title">3. Having a criminal parent jailed reduces children’s likelihood of incarceration by 4.9pp.</div>
+            <div class="meta">
+                American Economic Review · 2021-05-04
+                <span class="similarity">Similarity: 0.57</span>
+            </div>
+            <div class="meta">Almost classified as: P10_S10</div>
+            <div class="edge-reason">This article is borderline because while it deals with incarceration rates (relevant to urban crime trends), its primary focus is on family dynamics and intergenerational effects of criminal justice involvement on children's developmental outcomes, which aligns more closely with educational and childhood intervention research than urban crime pattern analysis.</div>
+        </li>
+        
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Original Dendrogram</h2>
+            <div class="dendrogram">
+                <img src="../../dendrograms/P13_S4_dendrogram.png" alt="Relationship Dendrogram" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
+    </footer>
+</body>
+</html>
