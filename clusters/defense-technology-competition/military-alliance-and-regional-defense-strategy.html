@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Military Alliance and Regional Defense Strategy - MacroRoundup</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <script src="../../js/visualizations.js" defer></script>
-</head>
+    </head>
 <body data-subcluster-id="P5_S2">
     <header>
         <div class="container">
@@ -27,14 +26,17 @@
             <p>This subcluster examines military partnerships, regional defense posturing, and strategic alliance formation in response to great power competition, particularly in the Indo-Pacific theater. Articles predominantly feature defense officials' statements, military procurement announcements, and strategic policy shifts from traditional defense frameworks. Coverage emphasizes Japan's constitutional defense transformation, US command structure evolution, and China's military infrastructure development. Unlike sibling subclusters focusing on semiconductor trade mechanics or aggregate defense spending analysis, this group centers on geopolitical military positioning, operational command integration, and alliance-building strategies that reshape regional security architectures through concrete military asset deployment and diplomatic defense agreements.</p>
         </div>
         
+        
         <!-- SIMILARITY HEATMAP -->
         <div class="card viz-section">
             <h2>Similarity to All 70 Subclusters</h2>
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
                 Each cell represents a subcluster. Color intensity shows similarity (blue=low, red=high). 
-                Hover for details, click to navigate.
+                Black line marks current subcluster position.
             </p>
-            <div id="heatmap-viz" class="heatmap-container"></div>
+            <img src="../../viz_images/P5_S2_heatmap.png" alt="Similarity Heatmap" 
+                 class="viz-image" onclick="openLightbox(this)" 
+                 style="width: 100%; cursor: zoom-in; border-radius: 8px;">
         </div>
         
         <!-- SPIDER CHART -->
@@ -44,31 +46,39 @@
                 Average similarity to each of the 15 primary clusters. 
                 Larger area = stronger relationship to that cluster.
             </p>
-            <div id="spider-viz" class="spider-container"></div>
+            <div style="text-align: center;">
+                <img src="../../viz_images/P5_S2_spider.png" alt="Spider Chart" 
+                     class="viz-image" onclick="openLightbox(this)"
+                     style="max-width: 600px; width: 100%; cursor: zoom-in; border-radius: 8px;">
+            </div>
         </div>
         
         <!-- 2D EMBEDDING MAP -->
         <div class="card viz-section">
             <h2>Taxonomy Landscape</h2>
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with border.
-                Hover for details, click to navigate.
+                All 70 subclusters positioned by similarity (t-SNE). Current subcluster highlighted with label.
+                Click to enlarge.
             </p>
-            <div id="embedding-map" class="map-container"></div>
+            <img src="../../viz_images/P5_S2_map.png" alt="Taxonomy Landscape" 
+                 class="viz-image" onclick="openLightbox(this)"
+                 style="width: 100%; cursor: zoom-in; border-radius: 8px;">
         </div>
         
         <!-- NETWORK GRAPH -->
         <div class="card viz-section">
-            <h3 class="collapsible-header" onclick="toggleCollapsible(this)">
-                Interactive Network Graph
-            </h3>
-            <div class="collapsible-content">
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
-                    Current subcluster at center, connected to related subclusters. 
-                    Line thickness = similarity strength. Adjust threshold to show more/fewer connections.
-                </p>
-                <div id="network-graph" class="network-container"></div>
+            <h2>Network Connections</h2>
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">
+                Current subcluster at center, connected to related subclusters. 
+                Line thickness = similarity strength.
+            </p>
+            <div style="text-align: center;">
+                <img src="../../viz_images/P5_S2_network.png" alt="Network Graph" 
+                     class="viz-image" onclick="openLightbox(this)"
+                     style="max-width: 800px; width: 100%; cursor: zoom-in; border-radius: 8px;">
             </div>
+        </div>
+
         </div>
         
         <div class="card">
@@ -166,5 +176,32 @@
     <footer>
         Generated 2026-01-22 · MacroRoundup Taxonomy Analysis v2
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+         background: rgba(0,0,0,0.9); z-index: 10000; cursor: zoom-out;"
+         onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="" 
+             style="max-width: 95%; max-height: 95%; position: absolute; top: 50%; left: 50%; 
+                    transform: translate(-50%, -50%); border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; 
+                     cursor: pointer; font-weight: bold;">&times;</span>
+    </div>
+    
+    <script>
+    function openLightbox(img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLightbox();
+    });
+    </script>
+
 </body>
 </html>
