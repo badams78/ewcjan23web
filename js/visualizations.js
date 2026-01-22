@@ -614,33 +614,37 @@ window.vizData = {
  * Initialize all visualizations when DOM is ready
  */
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('MacroRoundup Visualizations: DOM loaded - VERSION 3');
+    console.log('=== MacroRoundup Visualizations v4 STARTING ===');
     
-    // Add visible version indicator for debugging
-    const versionIndicator = document.createElement('div');
-    versionIndicator.style.cssText = 'position: fixed; bottom: 10px; right: 10px; background: #333; color: #0f0; padding: 5px 10px; font-size: 11px; border-radius: 4px; z-index: 9999;';
-    versionIndicator.textContent = 'Viz v3 - Loading...';
-    document.body.appendChild(versionIndicator);
+    // IMMEDIATE visible test - if you see this, JS is running
+    const testBanner = document.createElement('div');
+    testBanner.id = 'js-test-banner';
+    testBanner.style.cssText = 'background: #0a0; color: white; padding: 15px; text-align: center; font-weight: bold; font-size: 16px; position: fixed; top: 0; left: 0; right: 0; z-index: 99999;';
+    testBanner.textContent = 'JS VERSION 4 LOADED - ' + new Date().toISOString();
+    document.body.insertBefore(testBanner, document.body.firstChild);
     
     // Get subcluster ID from body data attribute
     const subclusterId = document.body.dataset.subclusterId;
+    console.log('Subcluster ID:', subclusterId);
+    
     if (!subclusterId) {
         console.log('No subcluster ID found - not a subcluster page');
-        versionIndicator.textContent = 'Viz v3 - Not a subcluster page';
+        testBanner.textContent += ' | Not a subcluster page';
+        testBanner.style.background = '#f80';
         return;
     }
     
-    console.log('Loading data for subcluster:', subclusterId);
-    versionIndicator.textContent = 'Viz v3 - Loading ' + subclusterId + '...';
+    testBanner.textContent += ' | Loading ' + subclusterId;
     
-    // Show loading states
+    // Show loading states with very visible styling
     const vizContainers = ['heatmap-viz', 'spider-viz', 'embedding-map', 'network-graph'];
     vizContainers.forEach(id => {
         const container = document.getElementById(id);
         if (container) {
-            container.innerHTML = '<div style="padding: 20px; text-align: center; color: #666; background: #f0f0f0; border: 2px dashed #ccc;">Loading ' + id + '...</div>';
+            container.innerHTML = '<div style="padding: 40px; text-align: center; color: white; background: #36c; font-weight: bold; font-size: 18px; border: 4px solid #08f;">LOADING: ' + id + '</div>';
+            console.log('Set loading state for:', id);
         } else {
-            console.warn('Container not found:', id);
+            console.error('Container NOT FOUND:', id);
         }
     });
     
@@ -730,23 +734,33 @@ document.addEventListener('DOMContentLoaded', function() {
             VizUtils.showError('network-graph', 'Render error: ' + e.message);
         }
         
-        console.log('All visualization rendering complete');
+        console.log('=== ALL VISUALIZATION RENDERING COMPLETE ===');
         
-        // Update version indicator
-        const vi = document.querySelector('div[style*="position: fixed"]');
-        if (vi) vi.textContent = 'Viz v3 - Rendered OK';
+        // Update banner to show success
+        const banner = document.getElementById('js-test-banner');
+        if (banner) {
+            banner.textContent = 'VIZ v4 COMPLETE - All rendered successfully!';
+            banner.style.background = '#060';
+        }
     })
     .catch(error => {
-        console.error('Error loading visualization data:', error);
+        console.error('=== FETCH ERROR ===', error);
+        
+        // Update banner to show error
+        const banner = document.getElementById('js-test-banner');
+        if (banner) {
+            banner.textContent = 'VIZ v4 ERROR: ' + error.message;
+            banner.style.background = '#c00';
+        }
         
         // Show error in all containers with detailed message
         vizContainers.forEach(id => {
             const container = document.getElementById(id);
             if (container) {
-                container.innerHTML = `<div style="color: #c00; padding: 20px; text-align: center; background: #fee; border-radius: 8px;">
-                    <strong>Failed to load visualization data</strong><br>
-                    <span style="font-size: 0.85em;">${error.message}</span><br>
-                    <span style="font-size: 0.75em; color: #888;">Check browser console (F12) for details</span>
+                container.innerHTML = `<div style="color: white; padding: 30px; text-align: center; background: #c00; border-radius: 8px; font-size: 16px;">
+                    <strong>FAILED TO LOAD: ${id}</strong><br>
+                    <span>${error.message}</span><br>
+                    <span style="font-size: 0.8em;">Check browser console (F12)</span>
                 </div>`;
             }
         });
