@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Taxonomy Landscape - MacroRoundup</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+
+        #viz-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        #controls h1 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        #controls p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .back-btn:hover {
+            text-decoration: underline;
+        }
+
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            color: #666;
+            z-index: 2000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="controls">
+        <h1>3D Taxonomy Landscape</h1>
+        <p>
+            Explore the 3 key dimensions of the database.
+            <br><strong>Rotate</strong> to view from different angles.
+            <br><strong>Scroll</strong> to zoom.
+            <br><strong>Hover</strong> for details.
+        </p>
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <div id="loading">Loading 3D Universe...</div>
+    <div id="viz-container"></div>
+
+    <script>
+        // Fetch data and render
+        fetch('data/taxonomy_3d.json')
+            .then(response => response.json())
+            .then(data => initViz(data.nodes))
+            .catch(err => {
+                console.error(err);
+                document.getElementById('loading').innerText = "Error loading data.";
+            });
+
+        function initViz(nodes) {
+            document.getElementById('loading').style.display = 'none';
+
+            // Parse URL params for highlighting
+            const urlParams = new URLSearchParams(window.location.search);
+            const highlightId = urlParams.get('highlight');
+
+            // Prepare arrays for Plotly
+            const x = nodes.map(n => n.x);
+            const y = nodes.map(n => n.y);
+            const z = nodes.map(n => n.z);
+            const texts = nodes.map(n => `<b>${n.name}</b><br>(${n.primary_name})`);
+            const colors = nodes.map(n => n.color);
+            const sizes = nodes.map(n => n.id === highlightId ? 25 : 8); // Highlight larger
+            const opacities = nodes.map(n => n.id === highlightId ? 1.0 : 0.7);
+            const lineColors = nodes.map(n => n.id === highlightId ? '#000' : '#fff');
+            const lineWidths = nodes.map(n => n.id === highlightId ? 2 : 0.5);
+
+            const trace = {
+                x: x, y: y, z: z,
+                mode: 'markers',
+                marker: {
+                    size: sizes,
+                    color: colors,
+                    opacity: opacities,
+                    line: {
+                        color: lineColors,
+                        width: lineWidths
+                    }
+                },
+                text: texts,
+                hoverinfo: 'text',
+                type: 'scatter3d'
+            };
+
+            const layout = {
+                margin: { l: 0, r: 0, b: 0, t: 0 },
+                showlegend: false,
+                scene: {
+                    xaxis: { title: 'Domestic vs. Global (X)', showgrid: true, zeroline: false, showbg: false },
+                    yaxis: { title: 'Abstract vs. Concrete (Y)', showgrid: true, zeroline: false, showbg: false },
+                    zaxis: { title: 'Stability vs. Flux (Z)', showgrid: true, zeroline: false, showbg: false },
+                    camera: {
+                        eye: { x: 1.5, y: 1.5, z: 1.5 } // Default view
+                    }
+                }
+            };
+
+            // If highlighting, center camera on that node
+            if (highlightId) {
+                const targetNode = nodes.find(n => n.id === highlightId);
+                if (targetNode) {
+                    // Determine a nice camera angle relative to the point
+                    // Just offset slightly from the point
+                    layout.scene.camera = {
+                        center: { x: 0, y: 0, z: 0 }, // Plotly actually centers on data, this is view center
+                        eye: { x: targetNode.x * 0.5 + 1.2, y: targetNode.y * 0.5 + 1.2, z: targetNode.z * 0.5 + 1.2 }
+                    };
+
+                    // Add an annotation/arrow pointing to it?
+                    // For simplicity, size and color highlight is good for now.
+                }
+            }
+
+            Plotly.newPlot('viz-container', [trace], layout, { responsive: true });
+
+            // Enhance interaction
+            const myPlot = document.getElementById('viz-container');
+            myPlot.on('plotly_click', function (data) {
+                // Optional: navigate to the clicked cluster?
+                // We'd need to reconstruct the URL structure. 
+                // For now, let's keep it simple as a viewer.
+            });
+        }
+    </script>
+</body>
+
+</html>
